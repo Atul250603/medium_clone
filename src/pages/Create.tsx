@@ -53,7 +53,7 @@ function Create(){
                 <div>
                     <input className="w-full border-b border-b-black outline-none p-3 mt-2 text-xl font-semibold" placeholder="Title of The Blog" onChange={(e)=>setTitle(e.target.value)}/>
                 </div>
-                <div className="w-full h-full border border-black my-3 h-[50vh]">
+                <div className="w-full border border-black my-3 h-[50vh]">
                     <textarea className="w-full p-2 outline-none h-full resize-none overflow-y-auto" value={content} onChange={(e)=>setContent(e.target.value)}>
                         
                     </textarea>

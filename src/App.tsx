@@ -17,7 +17,7 @@ function App() {
       <Toaster/>
       <div>
         <Routes>
-            <Route path="/" element={<Signup/>}/>
+            <Route path="/" element={(localStorage.getItem('token'))?<Blogs/>:<Signup/>}/>
             <Route path="/signup" element={<Signup/>}/>
             <Route path="/signin" element={<Signin/>}/>
             <Route path="/blog/:id" element={<Suspense fallback={<BlogSkeleton/>}><Blog/></Suspense>}/>
